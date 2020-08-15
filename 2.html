@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script  type="text/javascript" src="cal.js">        
+    </script>
+    <style>
+        body{
+            margin:10%;
+        }
+        .main-container{
+            display:flex;
+            flex-direction: column;
+            margin:5%;
+            margin-left: 30%;
+            border-radius: 2%;
+            width: 400px;
+            background: grey;
+            justify-content: center;
+            align-items: center;           
+            padding:25px 30px;
+        }
+        input{
+            size:"40";
+            padding: 12px 20px;
+            border:none;
+            border-radius: 10px;
+            margin-bottom: 20px;            
+        }
+        button{
+        margin-top: 40px;
+        padding: 12px 20px;
+        background-color: orangered;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+        margin:10px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <H1>CALCULATOR</H1>
+        <input type="number" size="45" id="n3">
+
+        <div><input  type="number" placeholder="enter number" size="45" id="n1"></div>
+        <div><input type="number" placeholder="enter number" size="45" id="n2"></div>  
+        <div><button onclick="add()">add</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mul()">mul</button>
+        <button onclick="div()">div</button> </div> 
+    
+    </section>
+</body>
+</html>
